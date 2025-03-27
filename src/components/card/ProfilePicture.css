@@ -1,0 +1,44 @@
+.profile-picture-container {
+    position: relative;
+    margin:10px;
+    
+}
+
+.card-image {
+    border-radius:50%;
+    width: 45px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+
+.message {
+   
+ 
+    transform: translate(-50%);
+    font-family:Montserrat;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor:pointer;
+    margin:0;
+}
+
+.profile-picture-container:hover .message {
+    
+    
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+.profile-picture-container {
+    margin: 5px;
+}
+
+.card-image {
+    width: 35px;
+}
+
+.message {
+    font-size: 1.2rem;
+}
+}

@@ -1,0 +1,23 @@
+.about-card {
+    background-color:#F6F4E8;
+    border: 2px solid hsl(0, 42%, 61%);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px hsl(33, 93%, 27%);
+    padding: 20px;
+    margin: 20px auto;
+    text-align: left;
+    width: 800px;
+    height: 400px;
+     font-family: Montserrat;
+    color: #712E2E;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+
+
+ 

@@ -1,0 +1,194 @@
+.main-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:#F6F4E8 ;
+   /* background-color:hsl(33, 100%, 80%);*/
+    background-image: url(image1.jpg.webp);
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     position: relative;
+    overflow: hidden;
+}
+
+
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width:100%
+}
+
+.navbar {
+    display: flex;
+    justify-content:flex-end;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    padding: 10px 0; 
+}
+
+.navbar a {
+    color: hsl(33, 90%, 69%); 
+    text-decoration: none; 
+    padding: 14px 70px; 
+    font-family: 'Pacifico'; 
+    font-size: 1.5em;
+    font-weight: bold;
+    /*text-shadow: 3px 3px 5px hsl(0, 0%, 0%, 0.95);
+    /*background-color:hsl(52, 100%, 25%);
+    box-shadow: 5px 5px 10px hsl(33, 93%, 27%);*/
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+    text-shadow: -1px -1px 0  hsl(33, 29%, 30%),  
+    1px -1px 0 hsl(33, 29%, 30%),
+   -1px  1px 0  hsl(33, 29%, 30%),
+    1px  1px 0  hsl(33, 29%, 30%);
+}
+
+.navbar a:hover {
+    opacity: 0.9;
+    color: hsl(33, 100%, 45%);
+}
+
+
+
+  .footer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    border:black;
+    backdrop-filter: blur(2px);
+    gap:5px;
+    box-shadow: -5px -5px 5px hsl(33, 93%, 27%);
+    border-top-left-radius:10px;
+    padding: 10px;
+    margin-top: 90px;
+    font-size: 1.5em;
+    width:750px;
+    height:150px;
+  
+   
+}
+
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+   background-color: #F6F4E8;
+  margin:15px;
+
+  filter:  drop-shadow(1px -1px 0  hsl(33, 29%, 20%))
+  drop-shadow(-1px 1px 0   hsl(33, 100%, 45%))
+  drop-shadow(1px 1px 0   hsl(33, 100%, 45%))
+  drop-shadow(1px -1px 0  hsl(33, 100%, 45%));
+ 
+ 
+
+}
+
+
+.footer p {
+    color: #F6F4E8;
+    text-decoration: none;
+    font-family: Montserrat;
+    margin: 0 30px; 
+    font-weight: bold;
+
+    text-shadow: -1px -1px 0 hsl(33, 100%, 45%),  
+    1px -1px 0 hsl(33, 100%, 45%),
+   -1px  1px 0  hsl(33, 100%, 45%),
+    1px  1px 0 hsl(33, 100%, 45%),
+    -2px -2px 0  hsl(33, 29%, 30%),  
+    2px -2px 0  hsl(33, 29%, 30%),
+   -2px  2px 0  hsl(33, 29%, 30%),
+    2px  2px 0  hsl(33, 29%, 30%);
+    
+}
+
+.footer img:hover {
+    transform: scale(1.4);
+ 
+}
+
+
+@media (max-width: 768px) {
+
+
+  .footer{
+      padding: 10px;
+      width: 90%;
+        height: auto;
+        margin: 10px;
+      flex-direction: column;
+      
+     
+  }
+
+  .footer p {
+    margin: 10px 0; 
+    text-align: center; 
+    font-size: 1.4rem;
+}}
+
+.back-to-home-button
+ {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+ color:hsl(33, 100%, 45%);
+  text-decoration: none;
+  font-family: 'Pacifico';
+  opacity:0.9;
+  transition: transform 0.2s;
+  backdrop-filter:  blur(5px);
+  text-shadow: -1px -1px 0  hsl(33, 29%, 30%),  
+  1px -1px 0 hsl(33, 29%, 30%),
+ -1px  1px 0  hsl(33, 29%, 30%),
+  1px  1px 0  hsl(33, 29%, 30%);
+  
+}
+.back-to-home-icon {
+    font-size: 2rem;
+  }
+  
+  .back-to-home-button:hover {
+    color: hsl(33, 90%, 69%);
+    background-color: transparent;
+    transform: scale(1.1);
+    text-shadow:
+    -1px -1px 0  hsl(33, 29%, 30%),  
+     1px -1px 0 hsl(33, 29%, 30%),
+    -1px  1px 0  hsl(33, 29%, 30%),
+     1px  1px 0  hsl(33, 29%, 30%),
+     -2px -2px 0  hsl(33, 29%, 30%),  
+   2px -2px 0  hsl(33, 29%, 30%),
+  -2px  2px 0  hsl(33, 29%, 30%),
+   2px  2px 0  hsl(33, 29%, 30%);
+  }
+  .cv{
+    font-family: Montserrat ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding:10px 20px;
+    margin: 20px;
+    border:none;
+    border-radius: 10px;
+    cursor:pointer;
+    background-color: hsl(33, 100%, 45%);
+    text-shadow: 1px 1px 2px hsl(0, 0%, 30%), -1px -1px 2px hsl(0, 0%, 70%);
+    color: #f6f4e8;
+  }
+  .cv:hover{
+    background-color: hsl(33, 100%, 35%);
+  }

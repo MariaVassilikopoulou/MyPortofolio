@@ -1,0 +1,105 @@
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: hsl(33, 71%, 86%);
+    line-height: 1.6;
+    background-color:#F6F4E8;
+  }
+  
+  .cv-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Pacifico;
+  
+    
+  }
+  
+  .cv-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color :hsl(33, 29%, 30%);
+  
+    
+  }
+  .cv-container p {
+    color: #555;
+    font-family: 'Montserrat' ;
+    
+  }
+  
+  .cv-header p {
+    margin: 5px 0;
+    font-size: 1em;
+    color :hsl(33, 29%, 30%);
+    font-family: 'Montserrat' ;
+  
+    
+  }
+  
+  .cv-section {
+    margin-bottom: 20px;
+  }
+  
+  .cv-section h2 {
+    background-color:  hsl(33, 90%, 69%);
+    padding: 10px;
+    margin: 0 -20px;
+    border-left: 5px solid  hsl(33, 90%, 59%);
+    font-family: Pacifico;
+    color :hsl(33, 29%, 30%);
+  }
+  
+  .cv-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Montserrat' ;
+  
+    color :hsl(33, 29%, 30%);
+    
+    
+  }
+  
+  .cv-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+    font-family: 'Montserrat' ;
+  
+  
+  }
+  
+  .cv-section ul li {
+    margin-bottom: 5px;
+    font-family: 'Montserrat' ;
+  
+  }
+  .back-to-home-button1{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: hsl(33, 90%, 69%);
+  text-decoration: none;
+  font-family: 'Pacifico';
+  text-shadow: 1px 1px hsl(0, 0%, 30%), 2px 2px hsl(0, 0%, 30%);
+  transition: transform 0.2s;
+}
+
+.back-to-home-button1:hover
+{
+  transition: background-color 0.2s;
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+
+  .back-to-home-button1{
+    font-size: 1rem; 
+    margin-top: 15px; 
+  }
+  .back-to-home-button1:hover
+  {
+    transform: scale(2.2);
+    background-color :hsl(33, 29%, 30%);
+  }
+}
