@@ -1,57 +1,62 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './CV.css';
 
 function CV() {
   return (
     <div className="cv-container">
-      <div className="cv-header">
-        <h1>Maria Vassilikopoulou</h1>
-        <p>0769176037 – vasilikopouloumaria@gmail.com</p>
-      </div>
-
-      <div className="cv-section">
-        <h2>ABOUT ME</h2>
-        <p>
-        <strong>Frontend developer</strong> student at Jensen YH, expanding skills in React, HTML, CSS, JavaScript, and
-          Frontend frameworks. Also pursuing <strong>.NET Cloud Developer </strong> studies at IT-Högskolan, focusing on
-          Microsoft Azure cloud, Azure DevOps, database management, and user-friendly interfaces.
-          Actively seeking job opportunities to enhance skills and engage in practical development projects.
-        </p>
-      </div>
-
-      <div className="cv-section">
-        <h2>EDUCATION</h2>
-        <h3>Frontend Developer Student, JENSEN (Yrkeshögskolan) 2023 – ongoing</h3>
-        <ul>
-          <li>JavaScript: Developed dynamic web pages for improved user experience and reactive functionality.</li>
-          <li>React: Ongoing studies and high motivation to apply the knowledge in practice.</li>
-          <li>CSS: Designed web pages, with responsive design for all devices, Bootstrap, including a three-part homepage.</li>
-          <li>HTML: Created the structure of web pages with HTML elements and improved visual presentation.</li>
-          <li>API (Application Programming Interface): Communication between applications with JSON. Created web applications to fetch and send data.</li>
-          <li>Node.js and Express: Fundamental understanding of server-side JavaScript with Node.js.</li>
-          <li>Figma: Skilled in Figma for collaborative design, wireframing, and prototyping.</li>
-          <li>Agile Project Methodology and Testing, UX/UI, Packaging, Delivery, and Follow-up.</li>
-        </ul>
-        <h3>.NET Cloud Developer Student, ITHS (Yrkeshögskolan) 2023 – ongoing</h3>
-        <ul>
-          <li>C# and .NET: Implemented problem-solving oriented programming, developed interactive .NET applications.</li>
-          <li>Entity Framework: Experience in Code First and Database First, designed and implemented database models in Blazor application for a bookstore.</li>
-          <li>GUI: Created interactive interfaces, including a quiz game with the ability to play, edit, and create new quizzes saved as JSON files.</li>
-          <li>Node.js and Express: Developed server-based applications with Node.js and Express.</li>
-          <li>Azure and AzureDevops: Hosted the database in Azure for a CRUD application with cloud-based database management.</li>
-          <li>Database Management: Experience with SQL Server, MongoDB, Cosmos DB, SQL Server Management Studio, including the use of stored procedures, relational databases, and SQL/NoSQL query languages like Firebase.</li>
-          <li>Agile Methods, Cloud Publishing and Distribution, Docker, Cloud Architecture.</li>
-        </ul>
-        <h3>Göteborg Universitet & Hermods 2020 – 2022</h3>
-        <ul>
-          <li>English in Plain Language, Leadership and Organization, Communication in the Workplace, Programming 1 (C#), Programming 2 (C#).</li>
-        </ul>
-        <h3>University of West Attica: Bachelor program 2005 – 2010</h3>
-        <ul>
-          <li>Economics, Marketing, and Consumption: Focus on consumer behavior, global sustainable consumption, and marketing.</li>
-        </ul>
-      </div>
+        <div className="cv-header">
+            <h1>Maria Vassilikopoulou</h1>
+            <p><strong>JUNIOR FULLSTACK DEVELOPER</strong></p>
+            <p>0769176037 – vasilikopouloumaria@gmail.com</p>
+        </div>
+        <div className="cv-section">
+            <h2>INTERNSHIP</h2>
+            <h3>Junior Frontend Developer (LIA1 & LIA2) | Nov 2024 - Present</h3>
+            <p>NEXER Group</p>
+            <ul>
+                <li>Developed a Next.js application focusing on code structure, design, and the use of TypeScript.</li>
+                <li>Created reusable components with SCSS and Zustand, improving scalability and code quality.</li>
+                <li>Used Figma to design user interfaces and implemented best practices to deliver a well-structured product.</li>
+                <li>Ensured consistency and reusability by managing types and modular blocks in TypeScript.</li>
+            </ul>
+            <h3>Junior Backend & Cloud Developer (LIA 2) | Jan 2025 - Present</h3>
+            <p>NEXER Group</p>
+            <ul>
+                <li>Built and implemented a complete infrastructure in Azure, automating deployment processes with CI/CD, YAML, and Terraform.</li>
+                <li>Utilized .NET and cloud services to optimize the development process and ensure scalability.</li>
+                <li>Managed NoSQL data storage with MongoDB and CosmosDB for efficient backend-frontend communication.</li>
+                <li>Created and integrated APIs with ASP.NET Core Web API for efficient data management.</li>
+            </ul>
+            <h3>Junior Backend & Cloud Developer (LIA1) | Sep 2024 - Nov 2024 (3 mån)</h3>
+            <p>NEXER Group</p>
+            <ul>
+                <li>Worked with Azure services like App Services, Storage Accounts, Cosmos DB, and Service Bus.</li>
+                <li>Managed CI/CD pipelines in Azure DevOps, configured YAML, and developed Bicep templates for infrastructure automation.</li>
+                <li>Developed and maintained APIs in .NET, implemented Dependency Injection, and built microservices.</li>
+            </ul>
+        </div>
+        <div className="cv-section">
+            <h2>EDUCATION</h2>
+            <h3>Frontend Developer Student | JENSEN Yrkeshögskola | 2023 – ongoing</h3>
+            <ul>
+                <li>JavaScript, CSS, HTML, React, TypeScript</li>
+                <li>Figma, Agil metodik, UX/UI, Testning</li>
+            </ul>
+            <h3>.NET Cloud Developer Student | ITHS Yrkeshögskola | 2023 – ongoing</h3>
+            <ul>
+                <li>C#, .NET, Entity Framework, SQL, NoSQL (MongoDB, CosmosDB)</li>
+                <li>Azure, Terraform, Docker</li>
+                <li>Cloud publishing and distribution, Cloud & security solutions</li>
+            </ul>
+            <h3>Göteborgs Universitet & Hermods | 2020 – 2022</h3>
+            <ul>
+                <li>English, Leadership, Communication, Programming 1 & 2 (C#)</li>
+            </ul>
+            <h3>University of West Attica | 2005 – 2010</h3>
+            <ul>
+                <li>Economics, Marketing & Consumption, Focus on consumer behavior and sustainable consumption</li>
+            </ul>
+        </div>
 
       <div className="cv-section">
         <h2>SELF-TAUGHT SKILLS</h2>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import './About.css'
 
 function About() {
@@ -9,15 +9,17 @@ function About() {
     setIsFlipped(!isFlipped);
   }
 
-    const about = `I am Maria Vassilikopoulou, a passionate and enthusiastic frontend developer. I’m currently sharpening my skills in React, HTML, CSS, JavaScript, and various frontend frameworks. At the same time, I am gaining knowledge in .NET Cloud Development, focusing on Microsoft Azure cloud, Azure DevOps, and database management.
+ // const paragraphs = about.split('\n\n');
 
-I have a strong foundation in software development and a keen desire for continuous learning. My education has equipped me with a wide range of skills, including proficiency in C#, SQL, React, TypeScript, and tools such as Git and Docker. I also have experience in agile methodologies, UX/UI design, and cloud architecture, making me adaptable to dynamic and collaborative environments. I am also self-learning Python and Java.
+    const about =[ `Hi, I’m Maria Vassilikopoulou — a curious and motivated developer with a growing love for building web applications that are both useful and enjoyable to use. I'm currently focusing on full-stack development and cloud technologies, and I especially enjoy working with modern frontend tools like React, TypeScript, and Next.js, while also diving deeper into backend development and cloud services like Azure.
 
-I have successfully developed dynamic web applications, managed databases, and created interactive interfaces. Some of my notable projects include an e-wallet system, a personal portfolio website, and a library management system.
+I started my journey with languages like C#, SQL, and JavaScript, and over time, I’ve picked up experience working with .NET, Docker, and DevOps tools like CI/CD pipelines and infrastructure-as-code using Terraform and Bicep. I’m also learning how to build clean APIs with ASP.NET Core and manage data with both relational and NoSQL databases like MongoDB and CosmosDB.
 
-Fluent in Swedish and English, with Greek as my mother tongue, I bring a multicultural perspective to my work. Outside of my academic and professional pursuits, I enjoy programming, exploring new technologies, contributing to open-source projects, working out, traveling, and spending time with friends.
+Some of my favorite projects so far include building a Next.js app, creating reusable components with SCSS and Zustand, and setting up backend systems to work smoothly with frontend features. I really enjoy learning by doing — experimenting, debugging, and finding better ways to solve problems.
 
-I'm eager to grow my skills in the tech industry and look forward to the opportunities ahead. `;
+Outside of coding, I speak Swedish, English, and Greek, and I love combining my passion for tech with my interest in different cultures, travel, and staying active. I’m always open to new challenges, collaborative projects, or just connecting with other developers.
+
+Thanks for stopping by — feel free to reach out or check out what I’ve been working on! `];
   return (
     
 <div className={ `card ${isFlipped ? 'flip' : ''}`} onClick={handleFlip}>
@@ -30,7 +32,10 @@ I'm eager to grow my skills in the tech industry and look forward to the opportu
             About Me</h2>
     </div>
     <div className='card-back'>
-    <p className='card-text'>{about}</p>
+    {about.map((paragraph, index) => (
+    <p key={index} className='card-text'>{paragraph}</p>
+  ))}
+
 
    
     </div>

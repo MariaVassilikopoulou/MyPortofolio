@@ -1,11 +1,14 @@
-import { RouterProvider } from 'react-router-dom'
+import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import router from './router/router';
+
+
+const customRouter = createBrowserRouter(router.routes, {
+  basename: "/MyPortfolio", 
+});
 function App() {
-
-
   return (
     <main>
-    <RouterProvider router={router}/>
+    <RouterProvider router={customRouter}/>
     </main>
   )
 }
